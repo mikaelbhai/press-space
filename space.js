@@ -4,55 +4,9 @@
         <script>
         document.addEventListener("DOMContentLoaded", function() {
 
-var button = document.createElement('div');
-button.style.width = '100px';
-button.style.height = '100px';
-button.style.backgroundColor = 'red';
-document.body.appendChild(button);
-
-document.addEventListener('keydown', function(event) {
-  if (event.keyCode == 32) {
-    var color = button.style.backgroundColor;
-    if (color == 'red') {
-      button.style.backgroundColor = 'blue';
-    } else if (color == 'blue') {
-      button.style.backgroundColor = 'green';
-    } else if (color == 'green') {
-      button.style.backgroundColor = 'red';
-    }
-  }
-});
-
-button.style.width = '100%';
-button.style.height = '100%';
-
-document.addEventListener('keydown', function(event) {
-  if (event.keyCode == 32) {
-    var color = button.style.backgroundColor;
-    if (color == 'red') {
-      button.style.backgroundColor = 'blue';
-    } else if (color == 'blue') {
-      button.style.backgroundColor = 'green';
-    } else if (color == 'green') {
-      button.style.backgroundColor = 'yellow';
-    } else if (color == 'yellow') {
-      button.style.backgroundColor = 'red';
-    }
-  }
-});
-
-var text = document.createElement('div');
-text.innerHTML = '<b>press space!!</b>';
-text.style.position = 'absolute';
-text.style.top = '50%';
-text.style.left = '50%';
-text.style.transform = 'translate(-50%, -50%)';
-document.body.appendChild(text);
-
-text.style.fontFamily = 'monospace';
-text.style.fontSize = '50px';
-
-
+var helloWorld = document.createElement('div');
+helloWorld.innerHTML = 'Hello World';
+document.body.appendChild(helloWorld);
 });
         </script>
     </head>
