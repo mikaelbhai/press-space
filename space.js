@@ -52,12 +52,7 @@ document.body.appendChild(text);
 text.style.fontFamily = 'monospace';
 text.style.fontSize = '50px';
 
-text.style.fontFamily = 'minecraft';
 
-var link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = 'https://fonts.googleapis.com/css?family=Minecraft';
-document.head.appendChild(link);
 });
         </script>
     </head>
