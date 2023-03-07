@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changing Page</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press space to change the background color</h1>
+    <script>
+        document.body.addEventListener("keydown", function(event) {
+            if (event.code === "Space") {
+                document.body.style.backgroundColor = getRandomColor();
+            }
+        });
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
+
